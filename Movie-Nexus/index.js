@@ -40,7 +40,7 @@ app.set('views','./views');
 //MongoStore stores session cookies
 app.use(session({
     name: 'MovieApp',
-    secret: process.env.SESSION_SECRET || 'defaultsecret', // Change the secret in production
+    secret: process.env.SESSION_SECRET || 'defaultsecret',
     saveUninitialized: false,
     resave: false,
     cookie: {
